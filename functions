@@ -1,0 +1,27 @@
+void main() {
+  printMessage();
+  
+  print(total(
+  num2:5,
+  num1:8
+  ));
+  
+  int t = total(num1: 9);
+  print(t);
+  
+  sayHello("hamza");
+  sayHello("ali");
+}
+
+// return value , no return value 
+void printMessage(){
+  print("hello in flutter course");
+}
+
+int total({required int num1 , int num2 = 9}){
+  return num1 * num2;
+}
+
+void sayHello(String name){
+  print("hello $name"); //
+}
