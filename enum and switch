@@ -1,0 +1,41 @@
+void main() {
+  
+  final status = loggedStatus.LoggedIn;
+  status.doSomthing();
+
+
+  
+}
+
+
+
+
+
+enum loggedStatus {
+  LoggedIn,
+  LoggedOut,
+  NotLoggedIn;
+  
+  
+  doSomthing(){
+    if(this == loggedStatus.LoggedIn){
+      print("save user token");
+    } else {
+      print("move user to login page");
+    }
+  }
+    
+  String get humanize {
+    switch (this) {
+      case loggedStatus.LoggedIn:
+        return 'User Logged In';
+      case loggedStatus.LoggedOut:
+        return 'User Logged Out';
+     case loggedStatus.NotLoggedIn:
+        return 'User Never Logged in';
+      default:
+        return "";
+    }
+  }
+}
+
