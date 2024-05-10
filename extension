@@ -1,0 +1,40 @@
+void main() {
+  
+  print('Amer.png'.networkpath());
+}
+
+// extension 
+
+extension IntegerHelper on int {
+  
+}
+
+extension StringHelper on String {
+  
+  bool containE(){
+    return this.contains('e');
+  }
+  
+  
+  // condition ? '' :  ''
+  
+  String isEven(){
+   return this.length % 2 == 0? 'Is EVEN' : 'iS Odd';
+  }
+  
+  String path() {
+    return 'assets/images/${this}';
+  }
+  
+  
+    String networkpath() {
+    return'https://www.hellol.com/images/${this}';
+  }
+  
+}
+
+
+
+
+
+
